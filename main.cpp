@@ -8,6 +8,19 @@ void displayArray(string* arr, int size);
 
 int main()
 {
+    // initialize size of array
+    int SIZE = 5;
+
+    //create dynamic string array and populate with names
+    string* namesArray = new string[SIZE];
+    *(namesArray + 0) = "Ward";
+    *(namesArray + 1) = "Skye";
+    *(namesArray + 2) = "May";
+    *(namesArray + 3) = "Coulson";
+    *(namesArray + 4) = "Fitz";
+
+
+
 
     return 0;
 }
