@@ -4,6 +4,7 @@
 using namespace std;
 
 string* reverseArray(string* arr, int size);
+void displayArray(string* arr, int size);
 
 int main()
 {
@@ -24,4 +25,14 @@ string* reverseArray(string* arr, int size)
         end--;
     }
     return arr;
+}
+
+//Function definition for displayArray
+void displayArray(string* arr, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
