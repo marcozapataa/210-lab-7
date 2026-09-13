@@ -19,9 +19,20 @@ int main()
     *(namesArray + 3) = "Coulson";
     *(namesArray + 4) = "Fitz";
 
+    //display original array
+    cout << "Original array: ";
+    displayArray(namesArray, SIZE);
 
+    reverseArray(namesArray, SIZE);
 
+    //display reversed array
+    cout << "Reversed array: ";
+    displayArray(namesArray, SIZE);
 
+    //delete allocated memory
+    delete[] namesArray;
+
+    
     return 0;
 }
 
