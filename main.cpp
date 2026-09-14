@@ -44,7 +44,7 @@ string* reverseArray(string* arr, int size)
 
     while (start < end)
     {
-        swap(*start, *end)
+        swap(*start, *end);
         start++;
         end--;
     }
